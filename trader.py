@@ -81,4 +81,58 @@ class Trader:
         return orders
 
     def _trade_osmium(self, od: OrderDepth, position: int, timestamp: int, td: dict) -> List[Order]:
-        raise NotImplementedError
+        FAIR = 10000
+        LEVELS = 4
+        orders = []
+
+        mid = self._get_mid(od)
+        if mid is None:
+            return orders
+
+        # AC signal: compare current mid to last stored mid
+        last_mid = td.get("osmium_last_mid", float(FAIR))
+        last_return = mid - last_mid
+        td["osmium_last_mid"] = mid
+
+        if last_return < -3:       # dip → expect bounce → tighten bids
+            bid_compress, ask_compress = 1, 0
+        elif last_return > 3:      # spike → expect reversal → tighten asks
+            bid_compress, ask_compress = 0, 1
+        else:
+            bid_compress, ask_compress = 0, 0
+
+        # Inventory-skewed reservation price: lowers quotes when long, raises when short
+        res = FAIR - position * (3.0 / 80.0)
+
+        buy_cap = LIMITS["ASH_COATED_OSMIUM"] - position
+        sell_cap = LIMITS["ASH_COATED_OSMIUM"] + position
+
+        # Post LEVELS bid levels below reservation price
+        if buy_cap > 0:
+            vol_per_level = max(1, buy_cap // LEVELS)
+            remaining = buy_cap
+            for i in range(1, LEVELS + 1):
+                if remaining <= 0:
+                    break
+                vol = vol_per_level if i < LEVELS else remaining
+                vol = min(vol, remaining)
+                bid_price = int(res) - i + bid_compress
+                orders.append(Order("ASH_COATED_OSMIUM", bid_price, vol))
+                remaining -= vol
+
+        # Post LEVELS ask levels above reservation price
+        if sell_cap > 0:
+            vol_per_level = max(1, sell_cap // LEVELS)
+            remaining = sell_cap
+            for i in range(1, LEVELS + 1):
+                if remaining <= 0:
+                    break
+                vol = vol_per_level if i < LEVELS else remaining
+                vol = min(vol, remaining)
+                ask_price = int(res) + i - ask_compress
+                # Safety: ensure no bid/ask crossing (ask must be > all bids)
+                ask_price = max(ask_price, int(res) + 1)
+                orders.append(Order("ASH_COATED_OSMIUM", ask_price, -vol))
+                remaining -= vol
+
+        return orders

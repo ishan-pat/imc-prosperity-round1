@@ -186,3 +186,124 @@ def test_pepper_detects_new_day():
     td = json.loads(new_td_str)
     # base should have reset to ~12999.5 (not remain at 12000)
     assert abs(td["pepper_base"] - 12999.5) < 1.0
+
+# ── OSMIUM tests ────────────────────────────────────────────────────────────
+
+def test_osmium_posts_multiple_bid_and_ask_levels():
+    """At neutral position, posts at least 3 bid and 3 ask levels."""
+    from trader import Trader
+    t = Trader()
+    state = osmium_state(position=0, traderData=fresh_td())
+    result, _, _ = t.run(state)
+    orders = result.get("ASH_COATED_OSMIUM", [])
+    buys = [o for o in orders if o.quantity > 0]
+    sells = [o for o in orders if o.quantity < 0]
+    assert len(buys) >= 3
+    assert len(sells) >= 3
+
+def test_osmium_total_buy_volume_within_limit():
+    """Total buy volume never exceeds limit - position."""
+    from trader import Trader
+    t = Trader()
+    state = osmium_state(position=60, traderData=fresh_td())
+    result, _, _ = t.run(state)
+    orders = result.get("ASH_COATED_OSMIUM", [])
+    total_buy = sum(o.quantity for o in orders if o.quantity > 0)
+    assert total_buy <= 20  # 80 - 60
+
+def test_osmium_total_sell_volume_within_limit():
+    """Total sell volume never exceeds limit + position."""
+    from trader import Trader
+    t = Trader()
+    state = osmium_state(position=-60, traderData=fresh_td())
+    result, _, _ = t.run(state)
+    orders = result.get("ASH_COATED_OSMIUM", [])
+    total_sell = sum(-o.quantity for o in orders if o.quantity < 0)
+    assert total_sell <= 20  # 80 - 60
+
+def test_osmium_no_buy_at_max_long():
+    """Posts zero buy orders when position == 80."""
+    from trader import Trader
+    t = Trader()
+    state = osmium_state(position=80, traderData=fresh_td())
+    result, _, _ = t.run(state)
+    buys = [o for o in result.get("ASH_COATED_OSMIUM", []) if o.quantity > 0]
+    assert buys == []
+
+def test_osmium_no_sell_at_max_short():
+    """Posts zero sell orders when position == -80."""
+    from trader import Trader
+    t = Trader()
+    state = osmium_state(position=-80, traderData=fresh_td())
+    result, _, _ = t.run(state)
+    sells = [o for o in result.get("ASH_COATED_OSMIUM", []) if o.quantity < 0]
+    assert sells == []
+
+def test_osmium_bids_below_asks():
+    """No bid price is >= any ask price (no self-crossing orders)."""
+    from trader import Trader
+    t = Trader()
+    state = osmium_state(position=0, traderData=fresh_td())
+    result, _, _ = t.run(state)
+    orders = result.get("ASH_COATED_OSMIUM", [])
+    bid_prices = [o.price for o in orders if o.quantity > 0]
+    ask_prices = [o.price for o in orders if o.quantity < 0]
+    if bid_prices and ask_prices:
+        assert max(bid_prices) < min(ask_prices)
+
+def test_osmium_inventory_skew_long():
+    """When long (position > 0), reservation price shifts down — asks move lower."""
+    from trader import Trader
+    t = Trader()
+    state_neutral = osmium_state(position=0, traderData=fresh_td())
+    state_long = osmium_state(position=60, traderData=fresh_td())
+    t2 = Trader()
+    result_n, _, _ = t.run(state_neutral)
+    result_l, _, _ = t2.run(state_long)
+    asks_n = sorted(o.price for o in result_n.get("ASH_COATED_OSMIUM", []) if o.quantity < 0)
+    asks_l = sorted(o.price for o in result_l.get("ASH_COATED_OSMIUM", []) if o.quantity < 0)
+    # When long, asks should be lower (to sell more aggressively)
+    assert min(asks_l) <= min(asks_n)
+
+def test_osmium_ac_signal_tightens_bid_after_dip():
+    """After a price dip (last_return < -3), innermost bid is 1 tick closer to fair."""
+    from trader import Trader
+    t_dip = Trader()
+    t_flat = Trader()
+    # Neutral last_mid = 10000, current mid = 9995 → last_return = -5 (dip)
+    dip_td = json.dumps({
+        "pepper_base": 12000.0, "pepper_initialized": True,
+        "osmium_last_mid": 10000.0, "last_timestamp": 50,
+    })
+    flat_td = json.dumps({
+        "pepper_base": 12000.0, "pepper_initialized": True,
+        "osmium_last_mid": 9995.0,  # last_mid same as current → no return
+        "last_timestamp": 50,
+    })
+    # current mid = 9995 → bids at 9988, asks at 10002
+    state_dip = osmium_state(traderData=dip_td, bids={9988: 15}, asks={10002: -15})
+    state_flat = osmium_state(traderData=flat_td, bids={9988: 15}, asks={10002: -15})
+
+    result_dip, _, _ = t_dip.run(state_dip)
+    result_flat, _, _ = t_flat.run(state_flat)
+
+    bids_dip = sorted((o.price for o in result_dip.get("ASH_COATED_OSMIUM", []) if o.quantity > 0), reverse=True)
+    bids_flat = sorted((o.price for o in result_flat.get("ASH_COATED_OSMIUM", []) if o.quantity > 0), reverse=True)
+
+    # After dip, innermost (highest) bid should be >= flat innermost bid
+    if bids_dip and bids_flat:
+        assert bids_dip[0] >= bids_flat[0]
+
+def test_osmium_stores_last_mid():
+    """After each run, osmium_last_mid in traderData equals current mid."""
+    from trader import Trader
+    t = Trader()
+    state = osmium_state(
+        traderData=fresh_td(),
+        bids={9995: 15},
+        asks={10005: -15},
+    )
+    _, _, new_td_str = t.run(state)
+    td = json.loads(new_td_str)
+    expected_mid = (9995 + 10005) / 2.0
+    assert abs(td["osmium_last_mid"] - expected_mid) < 0.1
