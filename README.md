@@ -1,4 +1,4 @@
-# IMC Prosperity 4 — Round 1 Trading Algorithm
+# IMC Prosperity 4 : Round 1 Trading Algorithm
 
 Algorithmic trading submission for IMC Prosperity 4, Round 1.
 
@@ -6,7 +6,7 @@ Algorithmic trading submission for IMC Prosperity 4, Round 1.
 
 | Product | Strategy |
 |---|---|
-| `INTARIAN_PEPPER_ROOT` | Trend-long — holds max position (80) throughout the day |
+| `INTARIAN_PEPPER_ROOT` | Trend-long : holds max position (80) throughout the day |
 | `ASH_COATED_OSMIUM` | Passive multi-level market making with inventory skew and AC signal |
 
 ## Strategy Overview
