@@ -4,8 +4,7 @@ Usage: python3 backtest.py
 Reports per-day and total P&L for each product.
 """
 import csv
-import json
-from datamodel import Order, OrderDepth, TradingState, Observation
+from datamodel import OrderDepth, TradingState, Observation
 from trader import Trader
 
 PRICE_FILES = [
