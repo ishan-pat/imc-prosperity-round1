@@ -73,7 +73,7 @@ class Trader:
         if buy_cap > 0:
             if od.buy_orders:
                 best_bid = max(od.buy_orders.keys())
-                passive_price = best_bid + 1
+                passive_price = min(best_bid + 1, int(fair_value) + 1)
             else:
                 passive_price = int(fair_value) - 5  # fallback when book is empty
             orders.append(Order("INTARIAN_PEPPER_ROOT", passive_price, buy_cap))
@@ -101,8 +101,24 @@ class Trader:
         else:
             bid_compress, ask_compress = 0, 0
 
+        # End-of-day: flatten position aggressively in last 500 ticks
+        if timestamp > 950000:
+            tighten = (timestamp - 950000) // 10000  # increases 0→5 over last ~500k timestamps
+            if position > 0:
+                ask_compress += tighten   # ask moves closer to res, easier to sell
+            elif position < 0:
+                bid_compress += tighten   # bid moves closer to res, easier to buy
+
+        # Strong signal: shift reservation price toward expected bounce
+        if last_return < -5:
+            res_shift = 1.0   # shift res up (expect price to bounce up, want more bids filled)
+        elif last_return > 5:
+            res_shift = -1.0  # shift res down (expect price to fall, want more asks filled)
+        else:
+            res_shift = 0.0
+
         # Inventory-skewed reservation price: lowers quotes when long, raises when short
-        res = FAIR - position * (3.0 / 80.0)
+        res = FAIR - position * (3.0 / 80.0) + res_shift
 
         buy_cap = LIMITS["ASH_COATED_OSMIUM"] - position
         sell_cap = LIMITS["ASH_COATED_OSMIUM"] + position

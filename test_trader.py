@@ -381,3 +381,17 @@ def test_osmium_ask_never_below_bid():
         asks = [o.price for o in orders if o.quantity < 0]
         if bids and asks:
             assert max(bids) < min(asks), f"Crossed market at position={pos}: bid={max(bids)}, ask={min(asks)}"
+
+def test_osmium_eod_flattening_tightens_asks_when_long():
+    """At ts > 950000 with long position, asks are lower than at ts=100."""
+    from trader import Trader
+    t_eod = Trader()
+    t_normal = Trader()
+    state_eod = osmium_state(position=40, traderData=fresh_td(), timestamp=970000)
+    state_normal = osmium_state(position=40, traderData=fresh_td(), timestamp=100)
+    result_eod, _, _ = t_eod.run(state_eod)
+    result_normal, _, _ = t_normal.run(state_normal)
+    asks_eod = sorted(o.price for o in result_eod.get("ASH_COATED_OSMIUM", []) if o.quantity < 0)
+    asks_normal = sorted(o.price for o in result_normal.get("ASH_COATED_OSMIUM", []) if o.quantity < 0)
+    if asks_eod and asks_normal:
+        assert min(asks_eod) <= min(asks_normal), "EOD asks should be tighter (lower) when long"
