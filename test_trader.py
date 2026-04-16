@@ -307,3 +307,77 @@ def test_osmium_stores_last_mid():
     td = json.loads(new_td_str)
     expected_mid = (9995 + 10005) / 2.0
     assert abs(td["osmium_last_mid"] - expected_mid) < 0.1
+
+# ── edge case tests ─────────────────────────────────────────────────────────
+
+def test_empty_order_book_pepper():
+    """Trader handles empty order book without crashing."""
+    from trader import Trader
+    t = Trader()
+    state = pepper_state(
+        traderData=fresh_td(),
+        bids={},
+        asks={},
+    )
+    result, conv, td_str = t.run(state)
+    assert isinstance(result, dict)
+    assert conv == 0
+    assert isinstance(td_str, str)
+
+def test_empty_order_book_osmium():
+    """Trader handles empty OSMIUM order book without crashing."""
+    from trader import Trader
+    t = Trader()
+    state = osmium_state(
+        traderData=fresh_td(),
+        bids={},
+        asks={},
+    )
+    result, conv, td_str = t.run(state)
+    assert isinstance(result, dict)
+
+def test_both_products_in_same_state():
+    """run() handles both products in a single TradingState."""
+    from trader import Trader
+    t = Trader()
+    state = make_state(
+        order_depths={
+            "INTARIAN_PEPPER_ROOT": make_depth({11991: 19}, {12006: -10}),
+            "ASH_COATED_OSMIUM": make_depth({9993: 15}, {10010: -15}),
+        },
+        position={"INTARIAN_PEPPER_ROOT": 0, "ASH_COATED_OSMIUM": 0},
+        traderData=fresh_td(),
+    )
+    result, conv, td_str = t.run(state)
+    assert "INTARIAN_PEPPER_ROOT" in result
+    assert "ASH_COATED_OSMIUM" in result
+    assert conv == 0
+
+def test_trader_data_persists_between_calls():
+    """traderData returned from tick N is accepted as input on tick N+1."""
+    from trader import Trader
+    t = Trader()
+    state1 = pepper_state(traderData="", timestamp=100)
+    _, _, td1 = t.run(state1)
+    # td1 must be valid JSON
+    parsed = json.loads(td1)
+    assert "pepper_base" in parsed
+    assert "last_timestamp" in parsed
+    # Second call uses returned traderData
+    state2 = pepper_state(traderData=td1, timestamp=200)
+    result2, _, td2 = t.run(state2)
+    parsed2 = json.loads(td2)
+    assert parsed2["last_timestamp"] == 200
+
+def test_osmium_ask_never_below_bid():
+    """In extreme inventory skew, ask prices never go below bid prices."""
+    from trader import Trader
+    for pos in [-80, -60, -40, 0, 40, 60, 80]:
+        t = Trader()
+        state = osmium_state(position=pos, traderData=fresh_td())
+        result, _, _ = t.run(state)
+        orders = result.get("ASH_COATED_OSMIUM", [])
+        bids = [o.price for o in orders if o.quantity > 0]
+        asks = [o.price for o in orders if o.quantity < 0]
+        if bids and asks:
+            assert max(bids) < min(asks), f"Crossed market at position={pos}: bid={max(bids)}, ask={min(asks)}"
