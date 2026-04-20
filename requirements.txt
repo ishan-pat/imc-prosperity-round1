@@ -1,0 +1,3 @@
+pytest>=7.0
+# The submitted trader uses only the stdlib. Add numpy/pandas/matplotlib/jupyter
+# here as you need them for analysis notebooks and parameter sweeps.

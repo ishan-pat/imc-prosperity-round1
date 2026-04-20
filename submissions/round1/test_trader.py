@@ -60,12 +60,12 @@ def fresh_td(pepper_base: float = 12000.0, osmium_last_mid: float = 10000.0,
 # ── placeholder tests (will fail until Trader is implemented) ───────────────
 
 def test_import():
-    from trader import Trader
+    from final import Trader
     t = Trader()
     assert callable(t.run)
 
 def test_run_returns_three_values():
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = pepper_state(traderData=fresh_td())
     result = t.run(state)
@@ -75,7 +75,7 @@ def test_run_returns_three_values():
 
 def test_pepper_initializes_base_on_first_tick():
     """On first tick with no prior state, base_price must be set from mid."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     # mid = (11991 + 12006) / 2 = 11998.5, ts=0 → base = 11998.5 - 0 = 11998.5
     state = pepper_state(traderData="", timestamp=0,
@@ -87,7 +87,7 @@ def test_pepper_initializes_base_on_first_tick():
 
 def test_pepper_fair_value_uses_timestamp():
     """fair_value = base + ts/1000, so at ts=500000 with base=12000 → FV=12500."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     # base=12000, ts=500000 → FV=12500; ask at 12506 (FV+6 ≤ FV+10) should be taken
     state = pepper_state(
@@ -104,7 +104,7 @@ def test_pepper_fair_value_uses_timestamp():
 
 def test_pepper_respects_position_limit():
     """Never sends buy orders that would take position above 80."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     # Already at 75 long; asks have 20 units available — should only buy 5
     state = pepper_state(
@@ -120,7 +120,7 @@ def test_pepper_respects_position_limit():
 
 def test_pepper_does_not_buy_when_at_limit():
     """No buy orders when position == 80."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = pepper_state(
         position=80,
@@ -133,7 +133,7 @@ def test_pepper_does_not_buy_when_at_limit():
 
 def test_pepper_skips_expensive_asks():
     """Does not take asks more than 10 above fair value."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     # FV = 12000 + 0.1 = 12000.1; ask at 12015 (> FV+10=12010.1) should be skipped
     state = pepper_state(
@@ -150,7 +150,7 @@ def test_pepper_skips_expensive_asks():
 
 def test_pepper_posts_passive_bid_when_book_not_full():
     """After sweeping asks, post passive bid at best_bid+1 for remaining capacity."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     # FV=12000.1, ask at 12015 skipped (> FV+10), position=0 → full 80 cap remaining
     state = pepper_state(
@@ -167,7 +167,7 @@ def test_pepper_posts_passive_bid_when_book_not_full():
 
 def test_pepper_detects_new_day():
     """When timestamp resets (new day), re-initialize base_price."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     # Simulate: last tick was ts=999900 (end of day 1), now ts=0 (start of day 2)
     # Old base was 12000; new mid is 13000 at ts=0 → new base should be ~13000
@@ -191,7 +191,7 @@ def test_pepper_detects_new_day():
 
 def test_osmium_posts_multiple_bid_and_ask_levels():
     """At neutral position, posts at least 3 bid and 3 ask levels."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = osmium_state(position=0, traderData=fresh_td())
     result, _, _ = t.run(state)
@@ -203,7 +203,7 @@ def test_osmium_posts_multiple_bid_and_ask_levels():
 
 def test_osmium_total_buy_volume_within_limit():
     """Total buy volume never exceeds limit - position."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = osmium_state(position=60, traderData=fresh_td())
     result, _, _ = t.run(state)
@@ -213,7 +213,7 @@ def test_osmium_total_buy_volume_within_limit():
 
 def test_osmium_total_sell_volume_within_limit():
     """Total sell volume never exceeds limit + position."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = osmium_state(position=-60, traderData=fresh_td())
     result, _, _ = t.run(state)
@@ -223,7 +223,7 @@ def test_osmium_total_sell_volume_within_limit():
 
 def test_osmium_no_buy_at_max_long():
     """Posts zero buy orders when position == 80."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = osmium_state(position=80, traderData=fresh_td())
     result, _, _ = t.run(state)
@@ -232,7 +232,7 @@ def test_osmium_no_buy_at_max_long():
 
 def test_osmium_no_sell_at_max_short():
     """Posts zero sell orders when position == -80."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = osmium_state(position=-80, traderData=fresh_td())
     result, _, _ = t.run(state)
@@ -241,7 +241,7 @@ def test_osmium_no_sell_at_max_short():
 
 def test_osmium_bids_below_asks():
     """No bid price is >= any ask price (no self-crossing orders)."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = osmium_state(position=0, traderData=fresh_td())
     result, _, _ = t.run(state)
@@ -253,7 +253,7 @@ def test_osmium_bids_below_asks():
 
 def test_osmium_inventory_skew_long():
     """When long (position > 0), reservation price shifts down — asks move lower."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state_neutral = osmium_state(position=0, traderData=fresh_td())
     state_long = osmium_state(position=60, traderData=fresh_td())
@@ -267,7 +267,7 @@ def test_osmium_inventory_skew_long():
 
 def test_osmium_ac_signal_tightens_bid_after_dip():
     """After a price dip (last_return < -3), innermost bid is 1 tick closer to fair."""
-    from trader import Trader
+    from final import Trader
     t_dip = Trader()
     t_flat = Trader()
     # Neutral last_mid = 10000, current mid = 9995 → last_return = -5 (dip)
@@ -296,7 +296,7 @@ def test_osmium_ac_signal_tightens_bid_after_dip():
 
 def test_osmium_stores_last_mid():
     """After each run, osmium_last_mid in traderData equals current mid."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = osmium_state(
         traderData=fresh_td(),
@@ -312,7 +312,7 @@ def test_osmium_stores_last_mid():
 
 def test_empty_order_book_pepper():
     """Trader handles empty order book without crashing."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = pepper_state(
         traderData=fresh_td(),
@@ -326,7 +326,7 @@ def test_empty_order_book_pepper():
 
 def test_empty_order_book_osmium():
     """Trader handles empty OSMIUM order book without crashing."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = osmium_state(
         traderData=fresh_td(),
@@ -338,7 +338,7 @@ def test_empty_order_book_osmium():
 
 def test_both_products_in_same_state():
     """run() handles both products in a single TradingState."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state = make_state(
         order_depths={
@@ -355,7 +355,7 @@ def test_both_products_in_same_state():
 
 def test_trader_data_persists_between_calls():
     """traderData returned from tick N is accepted as input on tick N+1."""
-    from trader import Trader
+    from final import Trader
     t = Trader()
     state1 = pepper_state(traderData="", timestamp=100)
     _, _, td1 = t.run(state1)
@@ -371,7 +371,7 @@ def test_trader_data_persists_between_calls():
 
 def test_osmium_ask_never_below_bid():
     """In extreme inventory skew, ask prices never go below bid prices."""
-    from trader import Trader
+    from final import Trader
     for pos in [-80, -60, -40, 0, 40, 60, 80]:
         t = Trader()
         state = osmium_state(position=pos, traderData=fresh_td())
@@ -384,7 +384,7 @@ def test_osmium_ask_never_below_bid():
 
 def test_osmium_eod_flattening_tightens_asks_when_long():
     """At ts > 950000 with long position, asks are lower than at ts=100."""
-    from trader import Trader
+    from final import Trader
     t_eod = Trader()
     t_normal = Trader()
     state_eod = osmium_state(position=40, traderData=fresh_td(), timestamp=970000)

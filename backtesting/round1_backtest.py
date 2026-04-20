@@ -1,16 +1,24 @@
 """
-Backtest trader.py on historical CSV data.
-Usage: python3 backtest.py
+Backtest the Round 1 submitted trader on historical CSV data.
+Usage (from repo root): python3 -m backtesting.round1_backtest
 Reports per-day and total P&L for each product.
 """
 import csv
-from datamodel import OrderDepth, TradingState, Observation
-from trader import Trader
+import sys
+from pathlib import Path
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT))
+sys.path.insert(0, str(REPO_ROOT / "submissions" / "round1"))
+
+from datamodel import OrderDepth, TradingState, Observation  # noqa: E402
+from final import Trader  # noqa: E402
+
+DATA_DIR = REPO_ROOT / "data" / "round1"
 PRICE_FILES = [
-    ("prices_round_1_day_-2.csv", -2),
-    ("prices_round_1_day_-1.csv", -1),
-    ("prices_round_1_day_0.csv",   0),
+    (str(DATA_DIR / "prices_round_1_day_-2.csv"), -2),
+    (str(DATA_DIR / "prices_round_1_day_-1.csv"), -1),
+    (str(DATA_DIR / "prices_round_1_day_0.csv"),   0),
 ]
 
 def load_ticks(filename: str) -> dict:

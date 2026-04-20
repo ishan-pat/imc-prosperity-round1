@@ -2,5 +2,14 @@ __pycache__/
 .pytest_cache/
 *.pyc
 .DS_Store
-181339/
 .claude/
+.venv/
+venv/
+
+# Data capsules — keep folder structure, ignore the large CSVs
+data/**/*.csv
+data/**/*.parquet
+data/**/*.json
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

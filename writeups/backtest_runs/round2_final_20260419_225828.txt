@@ -1,0 +1,20 @@
+ Day Product                    Pos         Δcash           MtM        Equity
+--------------------------------------------------------------------------------
+  -1 ASH_COATED_OSMIUM           -5         61376        -50010         11366
+  -1 INTARIAN_PEPPER_ROOT        80       -880618        959960         79342
+     DAY INCR PNL                                                       90708
+
+   0 ASH_COATED_OSMIUM          -60        560093       -600480         20989
+   0 INTARIAN_PEPPER_ROOT        80             0       1040000        159382
+     DAY INCR PNL                                                       89663
+
+   1 ASH_COATED_OSMIUM           80      -1388783        799440         32126
+   1 INTARIAN_PEPPER_ROOT        80             0       1119960        239342
+     DAY INCR PNL                                                       91097
+
+================================================================================
+OVERALL PnL (cumulative equity, MtM at end of last day): 271,468 XIRECs
+Passive fill share parameter: 0.5
+
+Max |position|:  ASH_COATED_OSMIUM=80, INTARIAN_PEPPER_ROOT=80
+Ticks at limit:  ASH_COATED_OSMIUM=1336/30000 (4.5%), INTARIAN_PEPPER_ROOT=29998/30000 (100.0%)

@@ -1,66 +1,42 @@
-# IMC Prosperity 4 : Round 1 Trading Algorithm
+# IMC Prosperity 4
 
-Algorithmic trading submission for IMC Prosperity 4, Round 1.
+Algorithmic and manual challenge submissions for IMC Prosperity 4.
 
-## Products
+## Layout
 
-| Product | Strategy |
-|---|---|
-| `INTARIAN_PEPPER_ROOT` | Trend-long : holds max position (80) throughout the day |
-| `ASH_COATED_OSMIUM` | Passive multi-level market making with inventory skew and AC signal |
+```
+.
+├── submissions/       # Trader code, one subfolder per round; `final.py` = submitted version
+├── data/              # Raw data capsules from each round (CSVs gitignored — see data/README.md)
+├── notebooks/         # EDA, plotting, ad-hoc analysis
+├── backtesting/       # Local backtest harnesses, parameter sweeps, version comparisons
+├── manual/            # Manual challenge scripts per round
+├── writeups/          # Per-round notes, strategy rationale, post-round lessons
+├── datamodel.py       # IMC-provided types (shared by all rounds)
+└── requirements.txt
+```
 
-## Strategy Overview
+## Per-round pointers
 
-### INTARIAN_PEPPER_ROOT — Trend Long
+| Round | Submission | Backtest | Notes |
+|---|---|---|---|
+| 1 | [submissions/round1/final.py](submissions/round1/final.py) | [backtesting/round1_backtest.py](backtesting/round1_backtest.py) | [writeups/round1_notes.md](writeups/round1_notes.md) |
 
-The product follows a deterministic linear trend: `fair_value = base_price + timestamp / 1000`, with the base price jumping +1000 each new competition day.
+## Running locally
 
-- Sweeps all asks within 10 ticks of fair value to build position
-- Posts a passive bid at `min(best_bid + 1, int(fair_value) + 1)` for remaining capacity
-- Never sells — holds max long (80 units) through the full day to capture the trend
-
-### ASH_COATED_OSMIUM — Passive Market Making
-
-Mean-reverting around 10,000 with a lag-1 return autocorrelation of −0.49.
-
-- **4-level passive quoting** spread around a reservation price
-- **Inventory skew**: `reservation = 10000 − position × (3/80)` — shifts quotes to reduce exposure
-- **AC signal**: tightens bids after dips (`last_return < −3`), tightens asks after spikes (`last_return > +3`)
-- **Strong AC**: shifts reservation ±1 when `|last_return| > 5`
-- **End-of-day flattening**: progressively tightens quotes after `timestamp > 950,000` to close inventory
-
-## Files
-
-| File | Purpose | Submit? |
-|---|---|---|
-| `trader.py` | All trading logic — the only file uploaded to the competition | ✅ |
-| `datamodel.py` | IMC-provided types (`Order`, `TradingState`, etc.) | ❌ |
-| `backtest.py` | Simulates the trader on historical CSV data | ❌ |
-| `test_trader.py` | 24 unit tests covering both strategies and edge cases | ❌ |
-
-## Running Locally
-
-**Requirements:** Python 3.10+, pytest
+**Requirements:** Python 3.10+, `pip install -r requirements.txt`
 
 ```bash
-# Run all tests
-python3 -m pytest test_trader.py -v
+# Tests for the Round 1 trader
+python3 -m pytest submissions/round1 -v
 
-# Run backtest on historical data
-python3 backtest.py
+# Backtest (requires CSVs dropped into data/round1/ — see data/README.md)
+python3 -m backtesting.round1_backtest
 ```
 
-## Backtest Results (historical data)
+## Conventions
 
-```
-  Day Product                        Pos         Cash          MtM          PnL
---------------------------------------------------------------------------------
-   -2 INTARIAN_PEPPER_ROOT            80      -800528       880120        79592
-   -2 ASH_COATED_OSMIUM               80      -791076       799480         8404
-   -1 INTARIAN_PEPPER_ROOT            80            0       959840       959840
-   -1 ASH_COATED_OSMIUM              -26      1071154      -260052       811102
-    0 INTARIAN_PEPPER_ROOT            80            0      1040000      1040000
-    0 ASH_COATED_OSMIUM              -80       549917      -800560      -250643
-```
-
-> Note: conservative estimate — only aggressive (taker) fills are simulated. Passive fill income is not counted.
+- **Submissions**: within `submissions/roundN/`, iterate as `trader_v1.py`, `trader_v2.py`, and copy the actually-submitted version to `final.py`.
+- **Only one file is uploaded to the competition**: the chosen `final.py` (renamed to `trader.py` on upload). Everything else is local tooling.
+- **Data**: CSVs / Parquet / JSON are gitignored. Keep the `data/roundN/` folders in git via `.gitkeep`.
+- **Writeups**: capture non-obvious strategy rationale and post-round lessons per round so Round N+1 planning has context.
