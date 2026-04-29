@@ -1,0 +1,2062 @@
+{
+  "baseline_pnl": 7390.5,
+  "phases": {
+    "phase1": {
+      "GAMMA_HYDROGEL": [
+        {
+          "value": 1e-07,
+          "pnl": 7512.5
+        },
+        {
+          "value": 2e-07,
+          "pnl": 7512.5
+        },
+        {
+          "value": 5e-07,
+          "pnl": 7390.5
+        },
+        {
+          "value": 1e-06,
+          "pnl": 7314.5
+        },
+        {
+          "value": 2e-06,
+          "pnl": 7348.5
+        },
+        {
+          "value": 5e-06,
+          "pnl": 7152.5
+        },
+        {
+          "value": 1e-05,
+          "pnl": 6845.5
+        }
+      ],
+      "GAMMA_VELVETFRUIT": [
+        {
+          "value": 5e-07,
+          "pnl": 7517.5
+        },
+        {
+          "value": 1e-06,
+          "pnl": 7517.5
+        },
+        {
+          "value": 2e-06,
+          "pnl": 7390.5
+        },
+        {
+          "value": 5e-06,
+          "pnl": 7057.0
+        },
+        {
+          "value": 1e-05,
+          "pnl": 6822.0
+        },
+        {
+          "value": 2e-05,
+          "pnl": 5524.5
+        },
+        {
+          "value": 5e-05,
+          "pnl": -86452.5
+        }
+      ],
+      "MAX_HALF_SPREAD_HYDR": [
+        {
+          "value": 3,
+          "pnl": 4391.5
+        },
+        {
+          "value": 4,
+          "pnl": 5218.5
+        },
+        {
+          "value": 5,
+          "pnl": 5832.5
+        },
+        {
+          "value": 6,
+          "pnl": 6424.5
+        },
+        {
+          "value": 8,
+          "pnl": 7390.5
+        },
+        {
+          "value": 10,
+          "pnl": 7390.5
+        },
+        {
+          "value": 12,
+          "pnl": 7390.5
+        },
+        {
+          "value": 15,
+          "pnl": 7390.5
+        }
+      ],
+      "MAX_HALF_SPREAD_UND": [
+        {
+          "value": 1,
+          "pnl": 6257.5
+        },
+        {
+          "value": 2,
+          "pnl": 6940.0
+        },
+        {
+          "value": 3,
+          "pnl": 7390.5
+        },
+        {
+          "value": 4,
+          "pnl": 7390.5
+        },
+        {
+          "value": 5,
+          "pnl": 7390.5
+        },
+        {
+          "value": 6,
+          "pnl": 7390.5
+        }
+      ],
+      "MIN_HALF_SPREAD_HYDR": [
+        {
+          "value": 1,
+          "pnl": 7390.5
+        },
+        {
+          "value": 2,
+          "pnl": 7390.5
+        },
+        {
+          "value": 3,
+          "pnl": 7390.5
+        }
+      ],
+      "MIN_HALF_SPREAD_UND": [
+        {
+          "value": 1,
+          "pnl": 7390.5
+        },
+        {
+          "value": 2,
+          "pnl": 7414.5
+        }
+      ],
+      "MM_TOTAL_SIZE_HYDR": [
+        {
+          "value": 40,
+          "pnl": 7390.5
+        },
+        {
+          "value": 80,
+          "pnl": 7390.5
+        },
+        {
+          "value": 120,
+          "pnl": 7390.5
+        },
+        {
+          "value": 160,
+          "pnl": 7390.5
+        },
+        {
+          "value": 200,
+          "pnl": 7390.5
+        }
+      ],
+      "MM_TOTAL_SIZE_UND": [
+        {
+          "value": 40,
+          "pnl": 7399.5
+        },
+        {
+          "value": 80,
+          "pnl": 7390.5
+        },
+        {
+          "value": 120,
+          "pnl": 7390.5
+        },
+        {
+          "value": 160,
+          "pnl": 7390.5
+        },
+        {
+          "value": 200,
+          "pnl": 7390.5
+        }
+      ],
+      "MM_LEVELS": [
+        {
+          "value": 1,
+          "pnl": 7390.5
+        },
+        {
+          "value": 2,
+          "pnl": 7390.5
+        },
+        {
+          "value": 3,
+          "pnl": 7390.5
+        },
+        {
+          "value": 4,
+          "pnl": 7390.5
+        },
+        {
+          "value": 5,
+          "pnl": 7390.5
+        },
+        {
+          "value": 6,
+          "pnl": 7390.5
+        },
+        {
+          "value": 8,
+          "pnl": 7390.5
+        }
+      ],
+      "VOUCHER_MIN_EDGE": [
+        {
+          "value": 0.5,
+          "pnl": 4865.0
+        },
+        {
+          "value": 1.0,
+          "pnl": 6795.0
+        },
+        {
+          "value": 1.5,
+          "pnl": 7332.5
+        },
+        {
+          "value": 2.0,
+          "pnl": 7390.5
+        },
+        {
+          "value": 2.5,
+          "pnl": 7455.0
+        },
+        {
+          "value": 3.0,
+          "pnl": 7697.0
+        },
+        {
+          "value": 4.0,
+          "pnl": 7829.0
+        },
+        {
+          "value": 6.0,
+          "pnl": 6586.0
+        }
+      ],
+      "VOUCHER_EDGE_FRAC": [
+        {
+          "value": 0.0,
+          "pnl": 7977.5
+        },
+        {
+          "value": 0.25,
+          "pnl": 7977.5
+        },
+        {
+          "value": 0.5,
+          "pnl": 7390.5
+        },
+        {
+          "value": 0.75,
+          "pnl": 7781.5
+        },
+        {
+          "value": 1.0,
+          "pnl": 7781.5
+        }
+      ],
+      "VOUCHER_MAX_TRADE": [
+        {
+          "value": 1,
+          "pnl": 3684.5
+        },
+        {
+          "value": 3,
+          "pnl": 3618.0
+        },
+        {
+          "value": 5,
+          "pnl": 5804.5
+        },
+        {
+          "value": 10,
+          "pnl": 7390.5
+        },
+        {
+          "value": 20,
+          "pnl": 7350.5
+        },
+        {
+          "value": 50,
+          "pnl": 7444.5
+        }
+      ],
+      "SIGMA_EWMA_ALPHA": [
+        {
+          "value": 0.0001,
+          "pnl": -50152.0
+        },
+        {
+          "value": 0.001,
+          "pnl": 5737.0
+        },
+        {
+          "value": 0.002,
+          "pnl": 5574.5
+        },
+        {
+          "value": 0.005,
+          "pnl": 7390.5
+        },
+        {
+          "value": 0.01,
+          "pnl": 7798.5
+        },
+        {
+          "value": 0.02,
+          "pnl": 7808.0
+        },
+        {
+          "value": 0.05,
+          "pnl": 7032.0
+        }
+      ],
+      "DELTA_DEAD_ZONE": [
+        {
+          "value": 5,
+          "pnl": 6607.0
+        },
+        {
+          "value": 10,
+          "pnl": 7326.5
+        },
+        {
+          "value": 15,
+          "pnl": 7965.0
+        },
+        {
+          "value": 25,
+          "pnl": 7390.5
+        },
+        {
+          "value": 40,
+          "pnl": 7741.5
+        },
+        {
+          "value": 60,
+          "pnl": 7876.5
+        },
+        {
+          "value": 100,
+          "pnl": 8246.5
+        }
+      ]
+    },
+    "phase1_best_per_param": {
+      "GAMMA_HYDROGEL": {
+        "value": 1e-07,
+        "pnl": 7512.5
+      },
+      "GAMMA_VELVETFRUIT": {
+        "value": 5e-07,
+        "pnl": 7517.5
+      },
+      "MAX_HALF_SPREAD_HYDR": {
+        "value": 8,
+        "pnl": 7390.5
+      },
+      "MAX_HALF_SPREAD_UND": {
+        "value": 3,
+        "pnl": 7390.5
+      },
+      "MIN_HALF_SPREAD_HYDR": {
+        "value": 1,
+        "pnl": 7390.5
+      },
+      "MIN_HALF_SPREAD_UND": {
+        "value": 2,
+        "pnl": 7414.5
+      },
+      "MM_TOTAL_SIZE_HYDR": {
+        "value": 40,
+        "pnl": 7390.5
+      },
+      "MM_TOTAL_SIZE_UND": {
+        "value": 40,
+        "pnl": 7399.5
+      },
+      "MM_LEVELS": {
+        "value": 1,
+        "pnl": 7390.5
+      },
+      "VOUCHER_MIN_EDGE": {
+        "value": 4.0,
+        "pnl": 7829.0
+      },
+      "VOUCHER_EDGE_FRAC": {
+        "value": 0.0,
+        "pnl": 7977.5
+      },
+      "VOUCHER_MAX_TRADE": {
+        "value": 50,
+        "pnl": 7444.5
+      },
+      "SIGMA_EWMA_ALPHA": {
+        "value": 0.02,
+        "pnl": 7808.0
+      },
+      "DELTA_DEAD_ZONE": {
+        "value": 100,
+        "pnl": 8246.5
+      }
+    },
+    "phase2": [
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.1521111417383572e-07,
+          "GAMMA_VELVETFRUIT": 8.718898443024639e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 157,
+          "MM_TOTAL_SIZE_UND": 145,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.016391816419396,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.0023704843996189048,
+          "DELTA_DEAD_ZONE": 61.78620063577053
+        },
+        "pnl": 10084.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.8850895039145354e-07,
+          "GAMMA_VELVETFRUIT": 1.2541961613659504e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 12,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 104,
+          "MM_TOTAL_SIZE_UND": 46,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.385305662920012,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 30,
+          "SIGMA_EWMA_ALPHA": 0.002763084824051859,
+          "DELTA_DEAD_ZONE": 75.07201654981247
+        },
+        "pnl": 9614.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.506304643045896e-07,
+          "GAMMA_VELVETFRUIT": 6.693503850166411e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 4,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 88,
+          "MM_TOTAL_SIZE_UND": 107,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.5745088215095637,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 27,
+          "SIGMA_EWMA_ALPHA": 0.006337319732370432,
+          "DELTA_DEAD_ZONE": 50.97794317628951
+        },
+        "pnl": 9312.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.0871685678688693e-06,
+          "GAMMA_VELVETFRUIT": 5.218003202353579e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 12,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 67,
+          "MM_TOTAL_SIZE_UND": 158,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.923472497669529,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 12,
+          "SIGMA_EWMA_ALPHA": 0.004051988094481593,
+          "DELTA_DEAD_ZONE": 53.0984307136203
+        },
+        "pnl": 9083.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 6.409560964440444e-07,
+          "GAMMA_VELVETFRUIT": 5.39813716116103e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 6,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 68,
+          "MM_TOTAL_SIZE_UND": 93,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.1266596383195386,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.031369255585976155,
+          "DELTA_DEAD_ZONE": 70.40743355902488
+        },
+        "pnl": 9068.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.2560324441303637e-07,
+          "GAMMA_VELVETFRUIT": 9.671434004953338e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 145,
+          "MM_TOTAL_SIZE_UND": 78,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.7381926422887244,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 20,
+          "SIGMA_EWMA_ALPHA": 0.039446685211120824,
+          "DELTA_DEAD_ZONE": 70.97854182229122
+        },
+        "pnl": 9053.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.7290089511493603e-06,
+          "GAMMA_VELVETFRUIT": 1.1250471905823867e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 12,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 131,
+          "MM_TOTAL_SIZE_UND": 156,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.1620312268058175,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.012591910003167362,
+          "DELTA_DEAD_ZONE": 76.06690513025114
+        },
+        "pnl": 9049.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.245300162688775e-07,
+          "GAMMA_VELVETFRUIT": 9.46505316943867e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 6,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 91,
+          "MM_TOTAL_SIZE_UND": 150,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.1214933871514556,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.012860053635492147,
+          "DELTA_DEAD_ZONE": 44.28541126264038
+        },
+        "pnl": 8842.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.021556159060271e-06,
+          "GAMMA_VELVETFRUIT": 1.1327586641614796e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 181,
+          "MM_TOTAL_SIZE_UND": 84,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 2.0491205173418763,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 29,
+          "SIGMA_EWMA_ALPHA": 0.030757699171353636,
+          "DELTA_DEAD_ZONE": 61.17208508637
+        },
+        "pnl": 8837.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.0301681294901764e-06,
+          "GAMMA_VELVETFRUIT": 1.182741064287824e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 157,
+          "MM_TOTAL_SIZE_UND": 54,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.680590279535624,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 30,
+          "SIGMA_EWMA_ALPHA": 0.00476362934502709,
+          "DELTA_DEAD_ZONE": 77.4437299961831
+        },
+        "pnl": 8755.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.7130797135329756e-07,
+          "GAMMA_VELVETFRUIT": 1.8738240080034337e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 6,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 75,
+          "MM_TOTAL_SIZE_UND": 137,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.674912788800862,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 17,
+          "SIGMA_EWMA_ALPHA": 0.008504847264171925,
+          "DELTA_DEAD_ZONE": 72.93931168274531
+        },
+        "pnl": 8638.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.703046818439249e-07,
+          "GAMMA_VELVETFRUIT": 2.28218851026034e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 6,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 138,
+          "MM_TOTAL_SIZE_UND": 76,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.6339810323476898,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 30,
+          "SIGMA_EWMA_ALPHA": 0.010282487190538923,
+          "DELTA_DEAD_ZONE": 72.9757022872758
+        },
+        "pnl": 8593.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 4.872784512861767e-06,
+          "GAMMA_VELVETFRUIT": 2.0074896376732813e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 7,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 94,
+          "MM_TOTAL_SIZE_UND": 149,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.9170710377220521,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 27,
+          "SIGMA_EWMA_ALPHA": 0.02202164966085516,
+          "DELTA_DEAD_ZONE": 56.72893879320702
+        },
+        "pnl": 8565.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.554216396340948e-06,
+          "GAMMA_VELVETFRUIT": 1.6249764262927396e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 195,
+          "MM_TOTAL_SIZE_UND": 131,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 0.8189328242755489,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 9,
+          "SIGMA_EWMA_ALPHA": 0.010243980147110076,
+          "DELTA_DEAD_ZONE": 74.63027895787768
+        },
+        "pnl": 8561.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 9.007945140898686e-07,
+          "GAMMA_VELVETFRUIT": 1.4047038626091136e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 4,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 100,
+          "MM_TOTAL_SIZE_UND": 105,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.029382277918989,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.012337495256397366,
+          "DELTA_DEAD_ZONE": 56.970205641068645
+        },
+        "pnl": 8534.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.96080196410017e-07,
+          "GAMMA_VELVETFRUIT": 2.0834533251929723e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 79,
+          "MM_TOTAL_SIZE_UND": 108,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.9703763332835715,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 21,
+          "SIGMA_EWMA_ALPHA": 0.009280224854311481,
+          "DELTA_DEAD_ZONE": 67.58948518885646
+        },
+        "pnl": 8467.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.0447344964627505e-06,
+          "GAMMA_VELVETFRUIT": 5.723774383904084e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 174,
+          "MM_TOTAL_SIZE_UND": 48,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.6832734287191522,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 21,
+          "SIGMA_EWMA_ALPHA": 0.008995714634645055,
+          "DELTA_DEAD_ZONE": 42.21106767013544
+        },
+        "pnl": 8458.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.5362112754924086e-07,
+          "GAMMA_VELVETFRUIT": 1.8456789382359368e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 73,
+          "MM_TOTAL_SIZE_UND": 112,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.335901593297873,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.002434721245510963,
+          "DELTA_DEAD_ZONE": 56.191394456990444
+        },
+        "pnl": 8397.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.3443135752761096e-07,
+          "GAMMA_VELVETFRUIT": 8.410598917961756e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 43,
+          "MM_TOTAL_SIZE_UND": 61,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.074756788033621,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 21,
+          "SIGMA_EWMA_ALPHA": 0.0008674994105293269,
+          "DELTA_DEAD_ZONE": 64.18578351461665
+        },
+        "pnl": 8335.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.5707600557609942e-07,
+          "GAMMA_VELVETFRUIT": 8.185438686720088e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 109,
+          "MM_TOTAL_SIZE_UND": 76,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.221734221636008,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.0024251051836470024,
+          "DELTA_DEAD_ZONE": 56.56228466009979
+        },
+        "pnl": 8301.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.2642241875452932e-06,
+          "GAMMA_VELVETFRUIT": 8.043036325095332e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 6,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 110,
+          "MM_TOTAL_SIZE_UND": 146,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.8385936817893556,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 21,
+          "SIGMA_EWMA_ALPHA": 0.006132959948367862,
+          "DELTA_DEAD_ZONE": 18.038736233483753
+        },
+        "pnl": 8191.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 8.48503894909989e-07,
+          "GAMMA_VELVETFRUIT": 7.025768002876374e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 116,
+          "MM_TOTAL_SIZE_UND": 121,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.829130827705489,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.001581854204386702,
+          "DELTA_DEAD_ZONE": 68.39779438569491
+        },
+        "pnl": 8184.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.417045826059872e-06,
+          "GAMMA_VELVETFRUIT": 1.726383048055253e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 45,
+          "MM_TOTAL_SIZE_UND": 150,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.011366489172895,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 27,
+          "SIGMA_EWMA_ALPHA": 0.011570962002078475,
+          "DELTA_DEAD_ZONE": 40.55729048970086
+        },
+        "pnl": 8164.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.856544145956558e-07,
+          "GAMMA_VELVETFRUIT": 5.075287356979921e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 7,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 85,
+          "MM_TOTAL_SIZE_UND": 104,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.606825277051692,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 30,
+          "SIGMA_EWMA_ALPHA": 0.008903697395324846,
+          "DELTA_DEAD_ZONE": 68.12520111293503
+        },
+        "pnl": 8157.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.236550790400009e-07,
+          "GAMMA_VELVETFRUIT": 1.3957454897337177e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 183,
+          "MM_TOTAL_SIZE_UND": 138,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.2889108635468793,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 18,
+          "SIGMA_EWMA_ALPHA": 0.01356082590812596,
+          "DELTA_DEAD_ZONE": 32.24709103773171
+        },
+        "pnl": 8145.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.045621651470143e-06,
+          "GAMMA_VELVETFRUIT": 2.3211012018775826e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 12,
+          "MAX_HALF_SPREAD_UND": 6,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 76,
+          "MM_TOTAL_SIZE_UND": 157,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 2.0741935439112993,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 23,
+          "SIGMA_EWMA_ALPHA": 0.012471822748396404,
+          "DELTA_DEAD_ZONE": 34.39684882515202
+        },
+        "pnl": 8131.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 5.234578339484138e-07,
+          "GAMMA_VELVETFRUIT": 2.837603037891146e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 162,
+          "MM_TOTAL_SIZE_UND": 114,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 2.3036229379821815,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 19,
+          "SIGMA_EWMA_ALPHA": 0.035152928623875854,
+          "DELTA_DEAD_ZONE": 70.22252933590237
+        },
+        "pnl": 8106.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 5.826537720252529e-07,
+          "GAMMA_VELVETFRUIT": 3.840714388085652e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 12,
+          "MAX_HALF_SPREAD_UND": 4,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 118,
+          "MM_TOTAL_SIZE_UND": 112,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.294622944824668,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 22,
+          "SIGMA_EWMA_ALPHA": 0.04160902690290499,
+          "DELTA_DEAD_ZONE": 12.442518108109116
+        },
+        "pnl": 8057.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.29888479238019e-06,
+          "GAMMA_VELVETFRUIT": 3.0919595695977363e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 107,
+          "MM_TOTAL_SIZE_UND": 57,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.6098237846229255,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 20,
+          "SIGMA_EWMA_ALPHA": 0.005983076884034141,
+          "DELTA_DEAD_ZONE": 61.02603587391934
+        },
+        "pnl": 8056.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.0288590363868582e-07,
+          "GAMMA_VELVETFRUIT": 1.215237845480902e-05,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 12,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 152,
+          "MM_TOTAL_SIZE_UND": 45,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 2.3488637517344007,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 24,
+          "SIGMA_EWMA_ALPHA": 0.013744892638605026,
+          "DELTA_DEAD_ZONE": 77.71914525564688
+        },
+        "pnl": 8056.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.7778270885079175e-06,
+          "GAMMA_VELVETFRUIT": 4.978034760326342e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 70,
+          "MM_TOTAL_SIZE_UND": 73,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.987340175891697,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.003904057713054265,
+          "DELTA_DEAD_ZONE": 79.72738341160705
+        },
+        "pnl": 8034.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.937350991248455e-06,
+          "GAMMA_VELVETFRUIT": 1.7842874054157205e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 169,
+          "MM_TOTAL_SIZE_UND": 74,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.192472629335103,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 12,
+          "SIGMA_EWMA_ALPHA": 0.014160284191413535,
+          "DELTA_DEAD_ZONE": 67.8106941954816
+        },
+        "pnl": 8019.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.456394752101491e-06,
+          "GAMMA_VELVETFRUIT": 3.3902433665339367e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 4,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 82,
+          "MM_TOTAL_SIZE_UND": 50,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.0442900966023885,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.01663731508009201,
+          "DELTA_DEAD_ZONE": 26.906743216902996
+        },
+        "pnl": 7969.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.08476579942594e-06,
+          "GAMMA_VELVETFRUIT": 1.6238591328142212e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 52,
+          "MM_TOTAL_SIZE_UND": 116,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.976061051456791,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 24,
+          "SIGMA_EWMA_ALPHA": 0.0008226155310337505,
+          "DELTA_DEAD_ZONE": 67.70900071770424
+        },
+        "pnl": 7948.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.067900796036033e-06,
+          "GAMMA_VELVETFRUIT": 3.0894463276124934e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 190,
+          "MM_TOTAL_SIZE_UND": 106,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.844867147701226,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 16,
+          "SIGMA_EWMA_ALPHA": 0.0010804538428031592,
+          "DELTA_DEAD_ZONE": 69.06588835069971
+        },
+        "pnl": 7947.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.3511839883573336e-07,
+          "GAMMA_VELVETFRUIT": 1.0565024433320609e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 6,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 139,
+          "MM_TOTAL_SIZE_UND": 126,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.534365951512239,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 13,
+          "SIGMA_EWMA_ALPHA": 0.0029286160118715196,
+          "DELTA_DEAD_ZONE": 60.48088781905393
+        },
+        "pnl": 7942.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.411568689868267e-07,
+          "GAMMA_VELVETFRUIT": 1.0042284493281914e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 6,
+          "MAX_HALF_SPREAD_UND": 4,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 168,
+          "MM_TOTAL_SIZE_UND": 139,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.251651269512953,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 18,
+          "SIGMA_EWMA_ALPHA": 0.02783590990455883,
+          "DELTA_DEAD_ZONE": 60.1877953451511
+        },
+        "pnl": 7931.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.9735660836289693e-06,
+          "GAMMA_VELVETFRUIT": 1.762632462349351e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 155,
+          "MM_TOTAL_SIZE_UND": 143,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.1001732395724209,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 16,
+          "SIGMA_EWMA_ALPHA": 0.008017129590703819,
+          "DELTA_DEAD_ZONE": 71.4827641556562
+        },
+        "pnl": 7911.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.447451921025578e-06,
+          "GAMMA_VELVETFRUIT": 2.018737782130786e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 7,
+          "MAX_HALF_SPREAD_UND": 4,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 65,
+          "MM_TOTAL_SIZE_UND": 151,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.5258083612079532,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 12,
+          "SIGMA_EWMA_ALPHA": 0.04440264626537718,
+          "DELTA_DEAD_ZONE": 38.23329599985716
+        },
+        "pnl": 7904.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.2732833799970973e-07,
+          "GAMMA_VELVETFRUIT": 6.226851401218584e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 186,
+          "MM_TOTAL_SIZE_UND": 108,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.1743357162208643,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 13,
+          "SIGMA_EWMA_ALPHA": 0.025582443234043482,
+          "DELTA_DEAD_ZONE": 38.13804144947231
+        },
+        "pnl": 7867.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.5464148009990454e-07,
+          "GAMMA_VELVETFRUIT": 1.5669825914967262e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 7,
+          "MAX_HALF_SPREAD_UND": 4,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 100,
+          "MM_TOTAL_SIZE_UND": 97,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.8919049330165567,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 13,
+          "SIGMA_EWMA_ALPHA": 0.0020084530485549312,
+          "DELTA_DEAD_ZONE": 59.21618963007481
+        },
+        "pnl": 7856.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.4270312263119993e-06,
+          "GAMMA_VELVETFRUIT": 8.055229653034481e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 12,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 122,
+          "MM_TOTAL_SIZE_UND": 104,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.466257551543279,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 16,
+          "SIGMA_EWMA_ALPHA": 0.045495822906459066,
+          "DELTA_DEAD_ZONE": 73.69326812728244
+        },
+        "pnl": 7855.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 7.962934030626469e-07,
+          "GAMMA_VELVETFRUIT": 6.25335689384756e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 163,
+          "MM_TOTAL_SIZE_UND": 158,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 2.7874980458234746,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 8,
+          "SIGMA_EWMA_ALPHA": 0.012094987659389869,
+          "DELTA_DEAD_ZONE": 18.023770263694963
+        },
+        "pnl": 7848.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.328188645731099e-06,
+          "GAMMA_VELVETFRUIT": 1.9049137135703435e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 7,
+          "MAX_HALF_SPREAD_UND": 6,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 60,
+          "MM_TOTAL_SIZE_UND": 84,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.658043343504462,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 23,
+          "SIGMA_EWMA_ALPHA": 0.0016287632258455375,
+          "DELTA_DEAD_ZONE": 40.93094472623624
+        },
+        "pnl": 7802.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.49218366414606e-07,
+          "GAMMA_VELVETFRUIT": 1.6907494532398546e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 12,
+          "MAX_HALF_SPREAD_UND": 6,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 90,
+          "MM_TOTAL_SIZE_UND": 94,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 1.0164933610747058,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 10,
+          "SIGMA_EWMA_ALPHA": 0.00986823427301542,
+          "DELTA_DEAD_ZONE": 73.13085839094546
+        },
+        "pnl": 7793.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.5001054932828502e-07,
+          "GAMMA_VELVETFRUIT": 7.290824552819406e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 51,
+          "MM_TOTAL_SIZE_UND": 85,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 2.957061853434612,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 29,
+          "SIGMA_EWMA_ALPHA": 0.009650753805509362,
+          "DELTA_DEAD_ZONE": 67.2787742572702
+        },
+        "pnl": 7785.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 4.576356195881459e-06,
+          "GAMMA_VELVETFRUIT": 7.578146772267101e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 12,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 138,
+          "MM_TOTAL_SIZE_UND": 99,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.1114823333503576,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.015024917474935484,
+          "DELTA_DEAD_ZONE": 8.076703538969358
+        },
+        "pnl": 7770.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.082452192627191e-06,
+          "GAMMA_VELVETFRUIT": 2.1475689753014453e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 5,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 199,
+          "MM_TOTAL_SIZE_UND": 85,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.671974156675556,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 22,
+          "SIGMA_EWMA_ALPHA": 0.006671733337625596,
+          "DELTA_DEAD_ZONE": 43.97793501383703
+        },
+        "pnl": 7762.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.2084978514580003e-07,
+          "GAMMA_VELVETFRUIT": 7.908961986643818e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 1,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 71,
+          "MM_TOTAL_SIZE_UND": 158,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.359432199678762,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 17,
+          "SIGMA_EWMA_ALPHA": 0.004092665742683143,
+          "DELTA_DEAD_ZONE": 79.38786791155027
+        },
+        "pnl": 7759.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.7453796035458826e-06,
+          "GAMMA_VELVETFRUIT": 1.6111955684728275e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 4,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 141,
+          "MM_TOTAL_SIZE_UND": 40,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.7684097525178117,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 12,
+          "SIGMA_EWMA_ALPHA": 0.007771335483648934,
+          "DELTA_DEAD_ZONE": 43.82070191302469
+        },
+        "pnl": 7749.5
+      }
+    ],
+    "phase3": [
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.1048439613335197e-07,
+          "GAMMA_VELVETFRUIT": 6.823747866188981e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 178,
+          "MM_TOTAL_SIZE_UND": 174,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.239519777489025,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.0025784941032981406,
+          "DELTA_DEAD_ZONE": 75.43621957541052
+        },
+        "pnl": 10979.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 3.049327874762425e-07,
+          "GAMMA_VELVETFRUIT": 7.134574957883068e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 139,
+          "MM_TOTAL_SIZE_UND": 164,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.8897411014344323,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 26,
+          "SIGMA_EWMA_ALPHA": 0.001965362554226097,
+          "DELTA_DEAD_ZONE": 73.31419730153394
+        },
+        "pnl": 10693.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.3548371968528987e-07,
+          "GAMMA_VELVETFRUIT": 8.757718355146098e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 159,
+          "MM_TOTAL_SIZE_UND": 149,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.32375395920605,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.0023936598202528732,
+          "DELTA_DEAD_ZONE": 75.03123446192555
+        },
+        "pnl": 10417.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.5900204062391938e-07,
+          "GAMMA_VELVETFRUIT": 8.324370148945544e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 131,
+          "MM_TOTAL_SIZE_UND": 128,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.185863961729291,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 21,
+          "SIGMA_EWMA_ALPHA": 0.0016839314393439682,
+          "DELTA_DEAD_ZONE": 73.69699362213353
+        },
+        "pnl": 10334.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.6185673397182404e-07,
+          "GAMMA_VELVETFRUIT": 9.34586024044613e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 167,
+          "MM_TOTAL_SIZE_UND": 129,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.6008745278655563,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.002177717336291223,
+          "DELTA_DEAD_ZONE": 72.38362560869376
+        },
+        "pnl": 10213.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.8180353489961766e-07,
+          "GAMMA_VELVETFRUIT": 5.911484640412846e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 137,
+          "MM_TOTAL_SIZE_UND": 118,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.6008766891273263,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 26,
+          "SIGMA_EWMA_ALPHA": 0.002620730180551079,
+          "DELTA_DEAD_ZONE": 72.90233527320298
+        },
+        "pnl": 10106.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.1521111417383572e-07,
+          "GAMMA_VELVETFRUIT": 8.718898443024639e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 9,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 157,
+          "MM_TOTAL_SIZE_UND": 145,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.016391816419396,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.0023704843996189048,
+          "DELTA_DEAD_ZONE": 61.78620063577053
+        },
+        "pnl": 10084.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.5969251205983176e-07,
+          "GAMMA_VELVETFRUIT": 6.595670605355657e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 179,
+          "MM_TOTAL_SIZE_UND": 153,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.496697759866426,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 30,
+          "SIGMA_EWMA_ALPHA": 0.0032771560844659263,
+          "DELTA_DEAD_ZONE": 74.9102259546332
+        },
+        "pnl": 9980.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.6999915975304507e-07,
+          "GAMMA_VELVETFRUIT": 1.0562983615696164e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 131,
+          "MM_TOTAL_SIZE_UND": 145,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.426858477602161,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 24,
+          "SIGMA_EWMA_ALPHA": 0.0034683618653210953,
+          "DELTA_DEAD_ZONE": 69.7953038102962
+        },
+        "pnl": 9889.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.632326970050122e-07,
+          "GAMMA_VELVETFRUIT": 1.0364523894066905e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 183,
+          "MM_TOTAL_SIZE_UND": 123,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.48393659908578,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 23,
+          "SIGMA_EWMA_ALPHA": 0.0026947340976831353,
+          "DELTA_DEAD_ZONE": 69.18666340157688
+        },
+        "pnl": 9828.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.9952807163836358e-07,
+          "GAMMA_VELVETFRUIT": 1.0456660251842243e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 134,
+          "MM_TOTAL_SIZE_UND": 168,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.847716177697076,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.002216743612446982,
+          "DELTA_DEAD_ZONE": 69.30822187091003
+        },
+        "pnl": 9779.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.807588912326849e-07,
+          "GAMMA_VELVETFRUIT": 6.566848378635128e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 147,
+          "MM_TOTAL_SIZE_UND": 175,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.6418833289153727,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.0024369983367103455,
+          "DELTA_DEAD_ZONE": 75.29291912625028
+        },
+        "pnl": 9726.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.3672531584354984e-07,
+          "GAMMA_VELVETFRUIT": 6.435066618988553e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 162,
+          "MM_TOTAL_SIZE_UND": 145,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.300664291784871,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 21,
+          "SIGMA_EWMA_ALPHA": 0.001669457213871954,
+          "DELTA_DEAD_ZONE": 73.28303506891548
+        },
+        "pnl": 9695.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.3807854491775248e-07,
+          "GAMMA_VELVETFRUIT": 1.0074668917081195e-06,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 7,
+          "MAX_HALF_SPREAD_UND": 2,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 178,
+          "MM_TOTAL_SIZE_UND": 119,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.264657186643102,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.0023502689635358314,
+          "DELTA_DEAD_ZONE": 73.72192805365674
+        },
+        "pnl": 9625.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.8975393300075385e-07,
+          "GAMMA_VELVETFRUIT": 7.223202527850084e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 128,
+          "MM_TOTAL_SIZE_UND": 128,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.467377389294098,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 28,
+          "SIGMA_EWMA_ALPHA": 0.003083849409130822,
+          "DELTA_DEAD_ZONE": 57.638774406040845
+        },
+        "pnl": 9596.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.8453624844914722e-07,
+          "GAMMA_VELVETFRUIT": 6.942332410687121e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 8,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 173,
+          "MM_TOTAL_SIZE_UND": 155,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 3.6561106276683666,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 25,
+          "SIGMA_EWMA_ALPHA": 0.00190932031240576,
+          "DELTA_DEAD_ZONE": 76.24265859065153
+        },
+        "pnl": 9538.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.6492411300955346e-07,
+          "GAMMA_VELVETFRUIT": 6.65134090189516e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 141,
+          "MM_TOTAL_SIZE_UND": 143,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.422651206630756,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 27,
+          "SIGMA_EWMA_ALPHA": 0.0018764699754970303,
+          "DELTA_DEAD_ZONE": 59.60889134759573
+        },
+        "pnl": 9462.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 1.755919940884249e-07,
+          "GAMMA_VELVETFRUIT": 8.357316176008712e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 10,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 158,
+          "MM_TOTAL_SIZE_UND": 149,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.351005749749619,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 26,
+          "SIGMA_EWMA_ALPHA": 0.0026905633065069114,
+          "DELTA_DEAD_ZONE": 75.89557257507633
+        },
+        "pnl": 9412.0
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.2838757758761992e-07,
+          "GAMMA_VELVETFRUIT": 7.795986829153527e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 11,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 177,
+          "MM_TOTAL_SIZE_UND": 170,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.365024094086643,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 21,
+          "SIGMA_EWMA_ALPHA": 0.0027524649790517607,
+          "DELTA_DEAD_ZONE": 54.9168270676507
+        },
+        "pnl": 9241.5
+      },
+      {
+        "params": {
+          "GAMMA_HYDROGEL": 2.1934049637443529e-07,
+          "GAMMA_VELVETFRUIT": 8.749440413698838e-07,
+          "SIGMA_HYDROGEL": 217.0,
+          "SIGMA_VELVETFRUIT": 113.0,
+          "K_HYDROGEL": 0.128,
+          "K_VELVETFRUIT": 0.443,
+          "MAX_HALF_SPREAD_HYDR": 7,
+          "MAX_HALF_SPREAD_UND": 3,
+          "MIN_HALF_SPREAD_HYDR": 1,
+          "MIN_HALF_SPREAD_UND": 1,
+          "MM_TOTAL_SIZE_HYDR": 164,
+          "MM_TOTAL_SIZE_UND": 166,
+          "MM_LEVELS": 4,
+          "VOUCHER_MIN_EDGE": 4.409221552824904,
+          "VOUCHER_EDGE_FRAC": 0.5,
+          "VOUCHER_MAX_TRADE": 30,
+          "SIGMA_EWMA_ALPHA": 0.003098891283506467,
+          "DELTA_DEAD_ZONE": 75.46853186104491
+        },
+        "pnl": 9008.5
+      }
+    ]
+  },
+  "final": {
+    "params": {
+      "GAMMA_HYDROGEL": 2.1048439613335197e-07,
+      "GAMMA_VELVETFRUIT": 6.823747866188981e-07,
+      "SIGMA_HYDROGEL": 217.0,
+      "SIGMA_VELVETFRUIT": 113.0,
+      "K_HYDROGEL": 0.128,
+      "K_VELVETFRUIT": 0.443,
+      "MAX_HALF_SPREAD_HYDR": 9,
+      "MAX_HALF_SPREAD_UND": 2,
+      "MIN_HALF_SPREAD_HYDR": 1,
+      "MIN_HALF_SPREAD_UND": 1,
+      "MM_TOTAL_SIZE_HYDR": 178,
+      "MM_TOTAL_SIZE_UND": 174,
+      "MM_LEVELS": 4,
+      "VOUCHER_MIN_EDGE": 4.239519777489025,
+      "VOUCHER_EDGE_FRAC": 0.5,
+      "VOUCHER_MAX_TRADE": 25,
+      "SIGMA_EWMA_ALPHA": 0.0025784941032981406,
+      "DELTA_DEAD_ZONE": 75.43621957541052
+    },
+    "pnl": 10979.0
+  }
+}
